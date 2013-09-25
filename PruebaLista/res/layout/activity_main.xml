@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btVerde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:height="70dp"
+        android:text=""
+        android:width="200dp" />
+
+    <Button
+        android:id="@+id/btAmarillo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btVerde"
+        android:layout_below="@+id/btVerde"
+        android:layout_marginTop="28dp"
+        android:height="70dp"
+        android:text=""
+        android:width="200dp" />
+
+    <Button
+        android:id="@+id/btRojo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btAmarillo"
+        android:layout_below="@+id/btAmarillo"
+        android:layout_marginTop="44dp"
+        android:height="70dp"
+        android:text=""
+        android:width="200dp" />
+
+    <Button
+        android:id="@+id/btSUME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btRojo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="911"
+        android:visibility="invisible" />
+
+</RelativeLayout>
