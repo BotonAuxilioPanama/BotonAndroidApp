@@ -46,4 +46,31 @@
         android:text="911"
         android:visibility="invisible" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btAmarillo"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ValAmarillo"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btRojo"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ValRojo"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/btVerde"
+        android:text="@string/ValVerde"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
 </RelativeLayout>

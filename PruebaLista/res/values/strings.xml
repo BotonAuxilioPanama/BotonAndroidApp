@@ -6,5 +6,8 @@
     <string name="menu_settings">Settings</string>
     <string name="title_activity_ver_circulo">VerCirculo</string>
     <string name="action_settings">Settings</string>
+    <string name="ValVerde">Conflicto</string>
+    <string name="ValAmarillo">Amenaza</string>
+    <string name="ValRojo">Violencia o Lesión</string>
 
 </resources>
