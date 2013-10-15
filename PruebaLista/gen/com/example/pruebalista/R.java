@@ -49,9 +49,9 @@ public final class R {
         public static final int eliminar_menu=0x7f090012;
         public static final int nombre_circulo_tv=0x7f09000f;
         public static final int numero_circulo_tv=0x7f090010;
-        public static final int textView1=0x7f090004;
-        public static final int textView2=0x7f090005;
-        public static final int textView3=0x7f090006;
+        public static final int textView1=0x7f090006;
+        public static final int textView2=0x7f090004;
+        public static final int textView3=0x7f090005;
         public static final int tvDatos=0x7f090011;
     }
     public static final class layout {

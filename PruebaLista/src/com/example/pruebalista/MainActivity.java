@@ -23,7 +23,7 @@ import android.widget.Toast;
 public class MainActivity extends Activity implements OnClickListener{
 Button b , btRojo, btAmarillo, btVerde, btSUME;
 Intent callIntent;
-String APLAFA_Num = "318345";
+String APLAFA_Num = "64095044";
 String  User_Num;
 private DBAdapter mDbHelper;
 

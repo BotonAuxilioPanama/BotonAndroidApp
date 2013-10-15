@@ -25,7 +25,27 @@ public class VerCirculo extends ListActivity {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		
-		try {
+		
+	}
+	
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+		lista();
+	}
+
+	@Override
+	//crea un menu que aparece cuando se presiona largo tiempo el item
+ 	public void onCreateContextMenu(ContextMenu menu, View v,ContextMenuInfo menuInfo) {  //long press 
+ 		super.onCreateContextMenu(menu, v, menuInfo);
+ 		MenuInflater inflater = getMenuInflater();
+ 	    inflater.inflate(R.menu.ver_circulo, menu);
+ 		
+ 	}
+	
+	public void lista(){
+       try {
 			
 			mDbHelper = new DBAdapter(this);
 			mDbHelper.open();
@@ -52,15 +72,6 @@ public class VerCirculo extends ListActivity {
 	}
 	
 	@Override
-	//crea un menu que aparece cuando se presiona largo tiempo el item
- 	public void onCreateContextMenu(ContextMenu menu, View v,ContextMenuInfo menuInfo) {  //long press 
- 		super.onCreateContextMenu(menu, v, menuInfo);
- 		MenuInflater inflater = getMenuInflater();
- 	    inflater.inflate(R.menu.ver_circulo, menu);
- 		
- 	}
-	
-	@Override
  	//segun el elemento seleccionado en el menu de contexto se realiza una accion
   	public boolean onContextItemSelected(MenuItem item) {
  		AdapterContextMenuInfo info = (AdapterContextMenuInfo) item.getMenuInfo();
@@ -68,7 +79,7 @@ public class VerCirculo extends ListActivity {
   		case R.id.eliminar_menu:
   			mDbHelper.deleteItem(info.id);
 //  			database.delete("registros", "_id= " + String.valueOf(info.id) );
-//  			desplegar_registros();
+  			lista();
   			return true;
   			 		
   		}
